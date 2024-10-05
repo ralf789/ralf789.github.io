@@ -1,0 +1,179 @@
+
+/*----Background--------*/
+/**-- For the particles --*/
+#canvas1 {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #b61924;
+}
+
+/*-------Nav IMAGES----------*/
+#image1 {
+    position:fixed;
+    left:0;right:0;bottom:10px;
+    padding: 10px;
+    margin-top: auto;
+    width:50%;
+    text-align:center;
+    white-space:nowrap;
+    height:auto;
+}
+
+#image1 img {
+    margin-left:5px; /* distance between characters on the left side */
+    margin-right:5px; /* distance between characters on the right side */
+    cursor:pointer;
+    -webkit-transition: all 0.5s; /*Transition*/
+}
+
+#image1:hover img {
+    opacity:0.9; /* opacity amount */
+    -webkit-filter:blur(5px);/* blur amount when hovered */
+}
+
+#image1:hover img:hover {
+    filter:blur(0px);
+}
+
+ 
+/*--------------------CONTAINER--------------------*/
+#flexwrap {display:flex;}
+#sesame {
+    position:fixed;
+    margin:auto;
+    left:0;right:0;
+    width:1000px; /* width of everything */
+    height:100vh;
+    display:table;
+    
+}
+ 
+#bun {
+    display:table-cell;
+    vertical-align:middle;
+}
+
+
+ /*-------------------*/
+/*--------Text side-----------*/
+/*-------------------*/
+#mainbox-a {
+    margin-left:100px;
+    margin-right:auto;
+    margin-bottom: auto;
+    flex:1;
+    -webkit-align-self:center;
+    transform:skew(-10deg);
+    -webkit-transform:skew(7deg);
+
+}
+ 
+/*--first row --*/
+.mainbox-header {
+    margin-bottom:20px;
+    box-shadow:6px 6px #000; 
+    border:3px solid #000;
+    background:#fff;
+    display:flex;
+}
+ 
+.about-name-label {
+    padding:10px 20px;
+    margin-left: auto;
+    background:#222;
+    font-size:27px;
+    color:#fff;
+}
+ 
+.about-name-text {
+    align-self:center;
+    margin-left:15px;
+    font-size:25px;
+    color:#000;
+}
+ 
+/*2nd & 3rd box*/
+.mainbox-item {
+    margin-bottom: 20px;
+    box-shadow:8px 8px #000;
+    background:#fff;
+    padding:30px 30px 18px 30px;
+    border:4px solid #000;
+    font-family:lato;
+    font-size:13px;
+    color:#000;
+}
+ 
+/* Boxes titles */
+.out_box {
+    margin-left:300px;
+    display:inline-block;
+    border:2px solid #FCA28E;
+    margin-bottom:-24px;
+    padding:10px;
+    background:#fff;
+}
+ 
+.in_box {
+    padding:3px 6px;
+    background:#1F1F1F;
+}
+  
+.text_in_box {
+    font-size:15px;
+    color:#fff;
+}
+ 
+/*--------------CHARACTER-----------*/
+#chara-cont {
+    width:450px; /*character contaner*/ 
+}
+ 
+.chara {
+    
+    margin-bottom:-110px; /*bottom position*/
+    width: inherit;
+}
+
+/*-----------------BOX Content------------------*/
+.Content-space {
+    display:flex;
+    margin-bottom:10px;
+} 
+ 
+.Content-word {
+    margin-right:20px;
+    width:80px;
+}
+ 
+.Content-percent {
+    width:40px;
+}
+ 
+/* percentage bar */
+.Content-bar {
+    flex:1;
+    height:5px;
+    border:2px solid #000;
+}
+ 
+.Content-fill {
+    height:inherit;
+    background:#08EDC9;
+}
+/*------Report  button--------*/
+#myBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  padding: 1px;
+  opacity: 0.5;
+
+ 
